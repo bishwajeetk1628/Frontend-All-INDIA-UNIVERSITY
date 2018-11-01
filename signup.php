@@ -3,39 +3,39 @@
 <title>All INDIA UNIVERSITY</title>
 <head>
 	<link rel="icon" href="icon.png" type="image/x-icon">
-	
+	<script type="text/javascript" src="jquery-1.8.2.js"></script>
 	<script type="text/javascript">
 function bt1()
 {
-document.body.style.backgroundImage = "url(dk2.jpg)";
+document.body.style.backgroundColor = "red";
 }
 function bt2()
 {
-document.body.style.backgroundImage ="url(dl1.jpg)";
+document.body.style.backgroundColor ="black";
 }
 function bt3()
 {
-document.body.style.backgroundImage ="url(dl.jpg)";
+document.body.style.backgroundColor ="rgba(56, 255, 38, 0.85)";
 }
 function bt4()
 {
-document.body.style.backgroundImage = "url(dl3.jpeg)";
+document.body.style.backgroundColor = "#003151";
 }
 function bt5()
 {
-document.body.style.backgroundImage = "url(dl4.jpg)";
+document.body.style.backgroundColor = "#FA6304";
 }
 function bt6()
 {
-document.body.style.backgroundImage ="url(dl5.jpg)";
+document.body.style.backgroundColor ="white";
 }
 function bt7()
 {
-document.body.style.backgroundImage = "url(dd6.png)";
+document.body.style.backgroundColor = "brown";
 }
 function bt8()
 {
-document.body.style.backgroundImage ="url(dg7.jpg)";
+document.body.style.backgroundColor ="#F9A602";
 }
 	</script>
 
@@ -53,13 +53,14 @@ text-decoration: none;
 .popup{
 width: 100%;
 margin: 0 auto;
-display: none;
 position: fixed;
-z-index: 101;
+top: 20px;
+z-index: 90;
 }
 .close
 {
 	padding-top: 10px;
+	background-color: black;
 
 }
 .cnt223{
@@ -67,10 +68,10 @@ min-width: 400px;
 width: 400px;
 min-height: 105px;
 border: 2px solid rgba(56, 215, 38, 0.85);
-margin: 100px auto;
-background:rgba(0,0,0,0.5);
+margin: 60px auto;
+background:rgba(56, 215, 38, 0.85);
 position: relative;
-z-index: 103;
+z-index: 50;
 padding: 5px 5px;
 border-radius: 5px;
 box-shadow: 0 2px 5px #000;
@@ -99,8 +100,7 @@ cursor: pointer;
 }
 body
 {
-	background-image:url(dk2.jpg);
-	background-color: white;
+	background-color: #003151;
 	background-repeat: no-repeat;
 	background-size: 1400px 2000px;
 	font-family: arial;
@@ -288,88 +288,88 @@ span
 
 .bt
 {
-background-image:url(dk2.jpg);
-width:40px;
-height:40px;
+background-color: red;
+border:none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bu
 {
-background-image:url(dl1.jpg);
-width:40px;
-height:40px;
+background-color: black;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bv
 {
-background-image:url(dl.jpg);
-width:40px;
-height:40px;
+background-color: rgba(56, 215, 38, 0.85);
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bw
 {
-background-image:url(dl3.jpeg);
-width:40px;
-height:40px;
+background-color:#003151;
+border: none;width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
+border:2px solid black; 
 outline: none;
 border-radius:5px;
 }
 .bx
 {
-background-image:url(dl4.jpg);
-width:40px;
-height:40px;
+background-color: #FA6304;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .by
 {
-background-image:url(dl5.jpg);
-width:40px;
-height:40px;
+background-color:white;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bz
 {
-background-image:url(dd6.png);
-width:40px;
-height:40px;
+background-color:brown;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .ba
 {
-background-image:url(dg7.jpg);
-width:40px;
-height:40px;
+background-color: #F9A602;
+border:none; 
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
@@ -420,6 +420,7 @@ ol li
  {
  	background-color: rgba(0,0,0,0.5);
  	width: 100%;
+ 	margin-top: 50px;
  	height: 350px;
  }
  .loc
@@ -460,14 +461,6 @@ input[type="submit"]
 	background-color: rgba(56, 215, 38, 0.85);
 	color: white;
 	border: none;
-}
-.about
-{
-	width: 100%;
-	height: 440px;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	background-color: rgba(0,0,0,0.2);
 }
 .bisu
 {
@@ -673,7 +666,34 @@ a
 	text-decoration: none;
 	color: white;
 }
+.container11 {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
 
+.bottom-left {
+    position: absolute;
+    top: 18px;
+    color: black;
+    left: 20%;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.href
+{
+	background-color: rgba(3, 185, 248, 0.48);
+	width: 100%;
+	padding: 5px;
+	position: absolute;
+	top:96%;
+	color: navy;
+	font-weight: bold;
+
+}
  </style>
 </head>
 <body>
@@ -687,45 +707,148 @@ a
 <button id="srchbtn">Search</button>
 </div><br><br>
 
-<div class='popup'>
+<div class='popup' id="pop">
 <div class='cnt223'>
-	<a href='' class='close' >&nbsp<img src="close.png" width="30px" height="30px" align="right"></a>
+	&nbsp<img src="close.png" width="30px" height="30px" style="cursor:pointer" align="right" onclick="document.getElementById('pop').style.display='none'">
 <br><center><h3 style="color:white"><b>Registered Successfully<br>You are logged in now</b></h3></center>
 </div>
 </div>
 
-<div class="slideshow-container">
-<div class="mySlides fade">
-  <div class="numbertext"><a href="http://www.iitb.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="1a.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Technology Bombay(IITB)</div>
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:1</label><br><label>Indian Institute of Technology Delhi(IITD)</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/2130.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/2130.htm" target="_blank"><img src="universitypics/website/delhi.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:48px;padding-right:48px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"><a href="https://www.iisc.ac.in/admissions/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="2.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Science(IISC) Banglore</div>
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:2</label><br><label>Indian Institute of Technology Kanpur</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/2036.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/2036.htm" target="_blank"><img src="universitypics/website/iit kanpur.png" width="100%" style="margin-bottom: 4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:58px;padding-right:58px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:Kanpur</label>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"><a href="http://www.iitd.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="3.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Technology Delhi(IITD)</div>
-</div>
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:3</label><br><label>Indian Institute of Technology Madras</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/2038.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/2038.htm" target="_blank"><img src="universitypics/website/madras.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:58px;padding-right:58px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:Madras</label>
 </div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:4/label><br><label> Indian Institute of Technology Bombay</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/2033.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/2033.htm" target="_blank"><img src="universitypics/website/bombay.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:Mumbai</label>
 </div>
 
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:5</label><br><label>Lovely Professional University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/13931.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/13931.htm" target="_blank"><img src="universitypics/website/lpu.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:Punjab</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:6</label><br><label>Indian Institute of Technology Kharagpur</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="https://www.4icu.org/reviews/2037.htm" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="https://www.4icu.org/reviews/2037.htm" target="_blank"><img src="universitypics/website/kharagpur.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:45px;padding-right:45px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:Kharagpur</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:7</label><br><label> Savitribai Phule Pune University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/savitri.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:8</label><br><label> Indian Institute of Technology Delhi</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/download.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:9</label><br><label> Anna University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/anna.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:10</label><br><label> VIT University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/VIT University.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:11</label><br><label> Indian Institute of Science Banglore</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/Indian Institute of Science.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:12</label><br><label> SRM Institute of Science and Technology</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/SRM Institute of Science and Technology.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:13</label><br><label> Dr. A.P.J. Abdul Kalam Technical University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/Dr. A.P.J. Abdul Kalam Technical University.png" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:14</label><br><label> Panjab University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/Panjab University.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<div class="container11" style="margin-left:100px;margin-bottom:70px;margin-top:50px">
+	<center><label style="color:rgba(56, 255, 38, 0.85);">Rank:15</label><br><label> Gujarat Technological University</label></center>
+  <center><div class="bottom-left"></div></center>
+   <center><a href="http://www.abhilashiuniversity.com/" target="_blank"><div class="href"><img src="brow.png" width="20px" align="top">Visit website</div></a></center>
+	<a href="http://www.abhilashiuniversity.com/" target="_blank"><img src="universitypics/website/Gujarat Technological University.jpg" width="100%" style="margin-bottom:4px;" height="320px"></a>
+	<label style="background-color:rgba(0,0,0,0.5);padding:8px;padding-left:47px;padding-right:47px;margin:0;" width="110%"><img src="loc.png" width="20px" align="top"> Location:New Delhi</label>
+</div>
+
+<br><br><br><br><br><br>
+<center><label style="font-size:23px">Page</label>&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="1.php"><b>&nbsp1&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="2.php"><b>&nbsp2&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="1.php"><b>&nbsp3&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="2.php"><b>&nbsp4&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="2.php"><b>&nbsp5&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="1.php"><b>&nbsp6&nbsp</b></a>
+&nbsp &nbsp<a style="background-color:rgba(56, 255, 38, 0.85);font-size:28px;padding:5px" href="2.php"><b>&nbsp7&nbsp</b></a><label><b style="font-size:29px">........</b></label>
+&nbsp &nbsp<a style="font-size:23px;padding:5px" href="1.php">next page>></a></center>
 
 
 
 <div class="ab">
-<p id="bg" style="color:black;">BACKGROUND</p>
+<p id="bg" style="color:white;">BACKGROUND</p>
 <ol>
 &nbsp&nbsp<li><button onclick="bt1()"class="bt"></button></li>
 &nbsp&nbsp<li><button onclick="bt2()" class="bu"></button></li>
@@ -756,62 +879,9 @@ a
 
 
 
-<div class="about">
-	<center><label style="font-size:35px;border-bottom:3px solid rgba(56, 215, 38, 0.85)">Our Professionals</label></center><br>
-	<div class="bisu"  style="margin-left:85px">
-		<div class="item">
-	<img src="suraj.jpeg" width="260px" height="332px">
-</div></div>
-<div class="mail" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" width="25px" align="top":>&nbsp surajshah766@gmail.com</label></div>
- <div class="centered">
- </div>
-
- <div class="sub">
- 	<div class="sos">
-     <a href="https://www.facebook.com/profile.php?id=100007057170409" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
-      <a href="https://www.linkedin.com/in/suraj-kumar-b881b8145/" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
-       <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
-   </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Suraj Kumar</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
-</div>
-
-<div class="bisu" style="margin-left:220px">
-		<div class="item">
-	<img src="bisu.JPG" width="250px">
-</div></div>
-<div class="mail1" style="padding-bottom:5px"><label style="margin:0px;padding-right:1px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px"> bishwajeetk003@gmail.com</label></div>
-<div class="centered1">
- </div>
- 	<div class="sub1">
- 		<div class="sos1">
-     <a href="https://www.facebook.com/profile.php?id=100008118907947" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
-      <a href="https://www.linkedin.com/in/bishwajeet-kumar-2b044a14a" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
-       <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
-       </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Bishwajeet Kr</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
-   </div>
-
-<div class="bisu"  style="margin-left:210px">
-		<div class="item">
-	<img src="prince1.jpg" width="250px" height="332px">
-</div></div>
-<div class="mail2" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px">&nbsp sraja1652@gmail.com</label></div>
-<div class="centered2">
- </div>
- 	<div class="sub2">
- 		<div class="sos2">
-     <a href="https://www.facebook.com/profile.php?id=100006522195366" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
-      <a href="" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
-       <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
-       </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Prince Kumar</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
-   </div>
-</div>
 
 
+<br><br>
 <div class="footer">
 	<div class="social">
     <br><label style="font-size:23px;font-family:arial;padding-left:130px;border-bottom:2px solid rgba(56, 215, 38, 0.85);padding-right:130px">Join Us</label><br><br>
@@ -846,45 +916,6 @@ a
 	</div>
 
 
-	<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-
-$(function(){
-var overlay = $('<div id="overlay"></div>');
-overlay.show();
-overlay.appendTo(document.body);
-$('.popup').show();
-$('.close').click(function(){
-$('.popup').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
-$('.x').click(function(){
-$('.popup').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
-});
-
-</script>
-
+	
 </body>
 </html>
