@@ -3,39 +3,53 @@
 <title>All INDIA UNIVERSITY</title>
 <head>
 	<link rel="icon" href="icon.png" type="image/x-icon">
-	<script type="text/javascript" src="jquery-1.8.2.js"></script>
+	<script type="text/javascript">
+	function signup()
+{
+    var a=document.getElementById('name').value;
+     var b=document.getElementById('mob').value;
+      var c=document.getElementById('email').value;
+       var d=document.getElementById('p1').value;
+        var e=document.getElementById('p1').value;
+        if(a!="" && b!="" && c!="" && d!="" && e!="")
+        {
+        	  document.getElementById('home1').href.innerHTML=a;
+        }
+
+ }
+	</script>
 	<script type="text/javascript">
 function bt1()
 {
-document.body.style.backgroundImage = "url(dk2.jpg)";
+document.body.style.backgroundColor = "red";
 }
 function bt2()
 {
-document.body.style.backgroundImage ="url(dl1.jpg)";
+document.body.style.backgroundColor ="black";
 }
 function bt3()
 {
-document.body.style.backgroundImage ="url(dl.jpg)";
+document.body.style.backgroundColor ="rgba(56, 255, 38, 0.85)";
 }
 function bt4()
 {
-document.body.style.backgroundImage = "url(dl3.jpeg)";
+document.body.style.backgroundColor = "#003151";
 }
 function bt5()
 {
-document.body.style.backgroundImage = "url(dl4.jpg)";
+document.body.style.backgroundColor = "#FA6304";
 }
 function bt6()
 {
-document.body.style.backgroundImage ="url(dl5.jpg)";
+document.body.style.backgroundColor ="white";
 }
 function bt7()
 {
-document.body.style.backgroundImage = "url(dd6.png)";
+document.body.style.backgroundColor = "brown";
 }
 function bt8()
 {
-document.body.style.backgroundImage ="url(dg7.jpg)";
+document.body.style.backgroundColor ="#F9A602";
 }
 
 function checkpss()
@@ -45,6 +59,7 @@ function checkpss()
 	if(a!=b)
 	{
      alert("Please match Password and Co-Password");
+     document.getElementById("myform").action ="frontend.php";
      document.getElementById('login').style.display='block';
 	}
 }
@@ -64,13 +79,14 @@ text-decoration: none;
 .popup{
 width: 100%;
 margin: 0 auto;
-display: none;
 position: fixed;
-z-index: 101;
+top: 20px;
+z-index: 90;
 }
 .close
 {
 	padding-top: 10px;
+	background-color: black;
 
 }
 .cnt223{
@@ -78,10 +94,10 @@ min-width: 400px;
 width: 400px;
 min-height: 105px;
 border: 2px solid rgba(56, 215, 38, 0.85);
-margin: 100px auto;
-background:rgba(0,0,0,0.5);
+margin: 60px auto;
+background:rgba(56, 215, 38, 0.85);
 position: relative;
-z-index: 103;
+z-index: 50;
 padding: 5px 5px;
 border-radius: 5px;
 box-shadow: 0 2px 5px #000;
@@ -108,11 +124,10 @@ width: 34px;
 .cnt223 .x:hover{
 cursor: pointer;
 }
-
 body
 {
-	background-image:url(dk2.jpg);
-	background-color: white;
+
+	background-color: #003151;
 	background-repeat: no-repeat;
 	background-size: 1400px 2000px;
 	font-family: arial;
@@ -121,7 +136,7 @@ body
 {
 	margin-left:6%; 
 	border-radius: 5px;
-	margin-top: 30px;
+	margin-top: 15px;
 	border: none;
 	background-color: rgba(0,0,0,0.5);
 	width: 88%;
@@ -136,7 +151,7 @@ padding-bottom: 10px;
 	border:none;
 	padding: 10px;
 	font-size: 18px;
-	margin-left: 10px;
+	margin-left: 1.5%;
 	color:white;
 	letter-spacing: 0.7px;
 	text-decoration: none;
@@ -166,9 +181,9 @@ body
 }
 #search
 {
-width:230px;
+width:16%;
 height: 35px;
-margin-left: 55px;
+margin-left: 3%;
 padding-left: 8px;
 display: inline-block;
 }
@@ -198,36 +213,30 @@ label
 }
 #login
 {
-margin-top: 4.5%;
 border: none;
 height: 550px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 10%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+margin-left: 32%;
+border-radius:5px; 
 }
 #login_box
 {
-margin-top: 4.5%;
 border: none;
 height: 450px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 10%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+margin-left: 32%;
+border-radius: 5px;
 }
 #contact
 {
-margin-top: 4.5%;
 border: none;
 height: 400px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 10%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+border-radius: 5px;
+margin-left:32%; 
 }
 input[type="text"]
 {
@@ -283,88 +292,87 @@ span
 
 .bt
 {
-background-image:url(dk2.jpg);
-width:40px;
-height:40px;
+background-color: red;
+border:none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bu
 {
-background-image:url(dl1.jpg);
-width:40px;
-height:40px;
+background-color: black;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bv
 {
-background-image:url(dl.jpg);
-width:40px;
-height:40px;
+background-color: rgba(56, 215, 38, 0.85);
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bw
 {
-background-image:url(dl3.jpeg);
-width:40px;
-height:40px;
+background-color:#003151;
+border: none;width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bx
 {
-background-image:url(dl4.jpg);
-width:40px;
-height:40px;
+background-color: #FA6304;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .by
 {
-background-image:url(dl5.jpg);
-width:40px;
-height:40px;
+background-color:white;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .bz
 {
-background-image:url(dd6.png);
-width:40px;
-height:40px;
+background-color:brown;
+border: none;
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
 }
 .ba
 {
-background-image:url(dg7.jpg);
-width:40px;
-height:40px;
+background-color: #F9A602;
+border:none; 
+width:30px;
+height:30px;
 display:inline-block;
-border:3px solid black;
 cursor:pointer;
 outline: none;
 border-radius:5px;
@@ -372,22 +380,29 @@ border-radius:5px;
 ol li
 {
  list-style:none;
- margin-right: 46px;
+ 
  }
  .ab
  {
+ 	
+
+ 	border-radius: 10px;
  	position: absolute;
- 	top: 140px;
- 	left: 1220px;
+ 	top: 25px;
+ 	right: 80px;
+ 	width: 160px; 	
+ 
  }
 #bg
  {
- 	font-size: 45px;
+ 	font-size: 34px;
+ 	color: white;
  	letter-spacing: 14px;
- 	position: absolute;
- 	top: 39%;
- left: -130px;
+ 	width: 50px;
+ 	padding-top: 55px;
+ 	padding-right: 80px;
  	 transform: rotate(90deg);
+ 	 float: right;
  }
  input[type="number"]
  {
@@ -458,11 +473,13 @@ input[type="submit"]
 }
 .about
 {
-	width: 100%;
-	height: 440px;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	background-color: rgba(0,0,0,0.2);
+	width: 94%;
+	height: 540px;
+	border-radius: 5px;
+	margin-top: 80px;
+	float: center;
+	margin-bottom: 100px;
+	background-color: rgba(0,0,0,0.5);
 }
 .bisu
 {
@@ -485,33 +502,15 @@ input[type="submit"]
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-.centered {
-    position: absolute;
-    top: 135.7%;
-    left: 6.3%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
-}
 .sub
 {
 	position: absolute;
-    top: 137%;
-    left: 7%;
-      width: 0;
+    top: 1570px;
+    left: 7.4%;
+  
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
-}
-.centered1 {
-    position: absolute;
-    top: 135.7%;
-    left: 41.45%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
 }
 .about:hover .centered1,.about:hover .centered2,.about:hover .centered{
  width: 250px;
@@ -520,28 +519,17 @@ input[type="submit"]
 .sub1
 {
 	position: absolute;
-    top: 137%;
-    left: 42%;
-    width: 0;
+    left: 41.2%;
+    bottom: 531px;
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
 }
-.centered2 {
-    position: absolute;
-    top: 135.7%;
-    left: 75.9%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
-}
 .sub2
 {
 	position: absolute;
-    top: 137%;
-    left: 76.4%;
-   width: 0;
+bottom: 531px;
+    left: 74.3%;
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
@@ -571,23 +559,24 @@ input[type="submit"]
 .mail
 {
 	position: absolute;
-	top: 1100px;
+	top: 1700px;
 	background-color: rgba(0, 0, 0, 0.6);
-	left: 86px;
+	left: 100px;
+	padding-right: 2px;
 }
 .mail1
 {
 	position: absolute;
-	top: 1100px;
+	top: 1700px;
 	background-color: rgba(0, 0, 0, 0.6);
-	left: 560px;
+	left: 554px;
 }
 .mail2
 {
 	position: absolute;
-	top: 1100px;
-	left: 1025px;
-	padding-right: 30px;
+	top: 1700px;
+	left: 999px;
+	padding-right: 32px;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -597,10 +586,14 @@ input[type="submit"]
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  display: inline-block;
-  margin: 0;
+ width: 1150px;
+  
+float: center;
+  margin: auto;
+  padding: 30px;
+ background-color: rgba(0,0,0,0.5);
+  padding-right: 0px;
+ border-radius:5px; 
 
 }
 
@@ -611,8 +604,8 @@ input[type="submit"]
   border-bottom: 2px solid black;
   font-weight: bold;
   position: absolute;
-  top: 8px;
- left:500px;
+   top : 35px;
+ left:390px;
 }
 
 /* Number text (1/3 etc) */
@@ -623,7 +616,8 @@ input[type="submit"]
   background-color: rgba(3, 185, 248, 0.48);
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 31;
+  left: 32;
 }
 
 /* The dots/bullets/indicators */
@@ -658,7 +652,12 @@ input[type="submit"]
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+@media only screen and (max-width: 1320px) {
+	#home,.home
+	{
+       display: none;
+	}
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -669,178 +668,306 @@ a
 	color: white;
 }
 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+ 
+}
+.service
+{
+	margin: 30px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	padding: 20px;
+	padding-bottom: 50px;
+	margin-bottom: 5px;
+}
+.c
+{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.d
+{
+	display: inline-block;
+	float: center;
+	width: 300px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.e
+{
+	display: inline-block;
+	float: right;
+	width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 5px;
+}
+.mode1
+{
+	position: static;
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	filter:none;
+	padding-bottom: 30px;
+	width: 300px;
+	border-radius: 5px;
+}
+.mode1,#login,#login_box,#contact {
+    -webkit-animation: animatezoom 1.5s;
+    animation: animatezoom 1.5s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.contents,.header
+{
+-webkit-filtter:blur(3px);
+-moz-filter:blur(3px);
+-o-filter:blur(3px);
+filter:blur(3px);
+}
+.mySlides
+{
+background-color: (0,0,0,0.5);
+}
  </style>
 </head>
 <body>
-<div class="header">
-	&nbsp&nbsp<img id="img" src="icon.png" width="50px" height="55px"><p id="log">&nbsp<span>ALL</span> INDIA UNIVERSITY</p>
-&nbsp &nbsp &nbsp <a href="frontend.php" id="home">Home</a>
-<a href="about_us.php" id="home">About us</a>
-<a href="#" id="home" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none'">Contact</a>
-<a href="#" id="home"  onclick="document.getElementById('login_box').style.display='block';document.getElementById('login').style.display='none';document.getElementById('contact').style.display='none'">Login</a>
-<button class="home" onclick="document.getElementById('login').style.display='block';document.getElementById('login_box').style.display='none';document.getElementById('contact').style.display='none'">Signup</button>
-<input type="search" id="search" placeholder="search.......">
-<button id="srchbtn">Search</button>
-</div><br><br>
 
-<div class='popup'>
+
+   <div class="header" id="hd">
+   	&nbsp&nbsp<img id="img" src="icon.png" width="50px" height="55px"><p id="log">&nbsp<span>ALL</span> INDIA UNIVERSITY</p>
+ &nbsp &nbsp &nbsp <a href="frontend.php" id="home">Home</a>
+ <a href="about_us.php" id="home">About us</a>
+ <a href="#" id="home" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Contact</a>
+ <a href="#" id="home"  onclick="document.getElementById('login_box').style.display='block';document.getElementById('login').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Login</a>
+ <button class="home" onclick="document.getElementById('login').style.display='block';document.getElementById('login_box').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Signup</button>
+ <input type="search" id="search" placeholder="search.......">
+ <button id="srchbtn">Search</button>
+ </div><br><br>
+<div class='popup' id="pop">
 <div class='cnt223'>
-	<a href='' class='close' >&nbsp<img src="close.png" width="30px" height="30px" align="right"></a>
-<br><center><h3 style="color:white"><b>Account doesn't exist<br>Please signup to access login</b></h3></center>
+	&nbsp<img src="close.png" width="30px" height="30px" style="cursor:pointer" align="right" onclick="document.getElementById('pop').style.display='none';document.getELementById('con').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)'">
+<br><center><h3 style="color:white"><b>Incorrect Details<br>Please re-check and login again</b></h3></center>
 </div>
 </div>
-
-
-<div class="slideshow-container">
-<div class="mySlides fade">
-  <div class="numbertext"><a href="http://www.iitb.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="1a.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Technology Bombay(IITB)</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"><a href="https://www.iisc.ac.in/admissions/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="2.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Science(IISC) Banglore</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"><a href="http://www.iitd.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
-  <img src="3.jpg" style="width:134.9%;height:500px">
-  <div class="text">Indian Institute of Technology Delhi(IITD)</div>
-</div>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-
-
-
-<div class="ab">
-<p id="bg" style="color:black;">BACKGROUND</p>
-<ol>
-&nbsp&nbsp<li><button onclick="bt1()"class="bt"></button></li>
-&nbsp&nbsp<li><button onclick="bt2()" class="bu"></button></li>
-&nbsp&nbsp<li><button id="b3" onclick="bt3()" class="bv"></button></li>
-&nbsp&nbsp<li><button id="b4" onclick="bt4()" class="bw"></button></li>
-&nbsp&nbsp<li><button id="b5" onclick="bt5()" class="bx"></button></li>
-&nbsp&nbsp<li><button id="b6" onclick="bt6()" class="by"></button></li>
-&nbsp&nbsp<li><button id="b7" onclick="bt7()" class="bz"></button></li>
-&nbsp&nbsp<li><button id="b8" onclick="bt8()" class="ba"></button></li>
-</ol>
-</div>
-
 <div id="login" style="display:none">
-	<form action="signup.php" method="POST">
-<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login').style.display='none'"><br>
-<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Signup</label></center><br><br>
-<label>Name<input type="text" placeholder="Enter Your Name" required></label><br><br>
-<label>Gender<br>&nbsp &nbsp <input type="radio" name="gender" value="Male" checked>Male</label>
-<label><input type="radio" name="gender" value="Female">Female</label>
-<label><input type="radio" name="gender" value="Other">Other</label><br><br>
-<label>Mobile No.<input type="number" placeholder="Enter Your Mobile Number" pattern="[789][0-9]{9}" title="wrong mobile number" required></label><br><br>
-<label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
-<label>Password<input type="password" id="p1" placeholder="Enter Password" required></label><br><br>
-<label>Co-Password<input type="password" id="p2" placeholder="Enter Co-Password" required></label><br><br>
-<center><button id="submit" onclick="checkpss()">Signup</button></center>
-</form>
+	<form method="POST" id="myform" action="signup.php">
+  <img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
+ <center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Signup</label></center><br><br>
+ <label>Name<input type="text" id="name" placeholder="Enter Your Name" required></label><br><br>
+ <label>Gender<br>&nbsp &nbsp <input type="radio" name="gender" value="Male" checked>Male</label>
+ <label><input type="radio" name="gender" value="Female">Female</label>
+ <label><input type="radio" name="gender" value="Other">Other</label><br><br>
+ <label>Mobile No.<input type="number" id="mob" placeholder="Enter Your Mobile Number" pattern="[789][0-9]{9}" title="wrong mobile number" required></label><br><br>
+ <label>Email Id<input type="text" id="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Password<input type="password" id="p1" placeholder="Enter Password" required></label><br><br>
+ <label>Co-Password<input type="password" id="p2" placeholder="Enter Co-Password" required></label><br><br>
+ <center><button id="submit" onclick="signup()">Signup</button></center>
+ </form>
 	</div>
-<div id="login_box" style="display:none">
-<form action="login.php" method="POST">
-	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login_box').style.display='none'"><br>
+  <div id="login_box" style="display:none">
+ <form action="login.php" method="POST">
+	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login_box').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
 	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Login</label></center><br><br><br>
-<label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
-<label>Password<input type="password" placeholder="Enter Password" required></label><br><br>
-<label><input type="checkbox" checked> Save Password</label>
-<center><button id="submit">Login</button></center>
-<a id="forgot" href="#">Forgot Password?</a><br><br>
-<center><label>OR</label><br>
-<label>Login via</label><br><br>
-&nbsp &nbsp &nbsp <a href="facebook.com"><img src="fb.png" width="35px"></a>&nbsp &nbsp 
-<a href="google.com"><img src="google.png" width="35px"></a></center>
-</form>
-</div>
-
+ <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Password<input type="password" placeholder="Enter Password" required></label><br><br>
+ <label><input type="checkbox" checked> Save Password</label>
+ <center><button id="submit">Login</button></center>
+ <a id="forgot" href="#">Forgot Password?</a><br><br>
+ <center><label>OR</label><br>
+ <label>Login via</label><br><br>
+ &nbsp &nbsp &nbsp <a href="facebook.com"><img src="fb.png" width="35px"></a>&nbsp &nbsp 
+ <a href="google.com"><img src="google.png" width="35px"></a></center>
+ </form>
+ </div>
 <div id="contact" style="display:none">
-<form>
-	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('contact').style.display='none'"><br>
+ <form>
+	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('contact').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
 	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Feel Free To Contact Us</label></center><br><br><br>
-<label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
-<label>Message<textarea rows="8" cols="53" type="text" placeholder="Write your message here......" required></textarea></label><br><br>
-<center><button id="submit">Send</button></center>
-</center>
-</form>
-</div>
-
-
-<div>
-</div>
-
-
-
-
-<div class="about">
-	<center><label style="font-size:35px;border-bottom:3px solid rgba(56, 215, 38, 0.85)">Our Professionals</label></center><br>
-	<div class="bisu"  style="margin-left:85px">
-		<div class="item">
-	<img src="suraj.jpeg" width="260px" height="332px">
-</div></div>
-<div class="mail" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" width="25px" align="top":>&nbsp surajshah766@gmail.com</label></div>
- <div class="centered">
+ <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Message<textarea rows="8" cols="53" type="text" placeholder="Write your message here......" required></textarea></label><br><br>
+ <center><button id="submit">Send</button></center>
+ </center>
+ </form>
  </div>
 
+
+        
+<div class="contents" id="contentsid">
+ <div class="slideshow-container" id="con" style="display:none">
+ <div class="mySlides fade">
+  <div class="numbertext"><a href="http://www.iitb.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
+  <img src="1a.jpg" style="width:87%;height:460px;border-radius:10px;">
+  <div class="text">Indian Institute of Technology Bombay(IITB)</div>
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext"><a href="https://www.iisc.ac.in/admissions/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
+  <img src="2.jpg" style="width:87%;height:460px;border-radius:10px">
+  <div class="text">Indian Institute of Science(IISC) Banglore</div>
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext"><a href="http://www.iitd.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
+  <img src="3.jpg" style="width:87%;height:460px;border-radius:10px">
+  <div class="text">Indian Institute of Technology Delhi(IITD)</div>
+ </div>
+
+ <div class="ab">
+ <p id="bg" style="color:white;">BACKGROUND</p>
+ <ol>
+ &nbsp&nbsp<li><button onclick="bt1()"class="bt"></button> </li>
+ &nbsp&nbsp<li><button onclick="bt2()" class="bu"></button> </li>
+ &nbsp&nbsp<li><button id="b3" onclick="bt3()" class="bv"></button> </li>
+ &nbsp&nbsp<li><button id="b4" onclick="bt4()" class="bw"></button> </li>
+ &nbsp&nbsp<li><button id="b5" onclick="bt5()" class="bx"></button> </li>
+ &nbsp&nbsp<li><button id="b6" onclick="bt6()" class="by"></button> </li>
+ &nbsp&nbsp<li><button id="b7" onclick="bt7()" class="bz"></button> </li>
+ &nbsp&nbsp<li><button id="b8" onclick="bt8()" class="ba"></button> </li>
+ </ol></div>
+
+ <div style="text-align:center;padding-right:90px">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ </div></div>
+
+ 
+
+ 
+<div>
+</div><br><br>
+<div class="service">
+	<center><label style="font-size:29px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Our Services</label><br><br><br>
+	<div class="c"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Campus Visit</label><br><br><label>Take a journey through your dream<br>University as before you get admitted<br> to one of it cross India.<br>If you would like to attend the campus visit,<br>please leave us a message above,<br>please note that separate reservations are<br>required for each individual for campus tour.</label><br><br>
+ <br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';document.getElementById('con').style.display='none';">Click here for enquiry</a>
+	</div>
+	<div class="d"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Direct Addmission</label><br><br><label>We are also glad to announce that<br> after achieving <br>special authority<br> liscense from all <br>the universities in India,<br>we are now able to provide direct admission<br> to the students via our business partner.</label>
+		<br><br><br><br><br><br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';document.getElementById('con').style.display='none';">Click here for enquiry</a>
+	</div>
+	<div class="e"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Scholarship</label><br><br><label>Systems vary widely from country to country, and <br>sometimes from institution to institution.<br> In India almost all top private colleges and <br>universities are having separate seats for management <br>quota. Education diary plays a vital role in<br> college and universities admission for all <br>Undergraduate and postgraduate programs.Hence,we<br> organize different scholarship test on the <br>basis of which one can acihieve benefits</label></div></center>
+</div>
+
+ <center><div class="about" >
+	<center><label style="font-size:35px;border-bottom:3px solid rgba(56, 215, 38, 0.85)"><br>Our Professionals</label></center><br><br><br>
+	<div class="bisu"  style="margin-left:0px">
+		<div class="item">
+	<img src="suraj.jpeg" width="260px" height="332px">
+ </div></div>
+ <div class="mail" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" width="25px" align="top":>&nbsp surajshah766@gmail.com</label></div>
+ 
  <div class="sub">
  	<div class="sos">
      <a href="https://www.facebook.com/profile.php?id=100007057170409" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
       <a href="https://www.linkedin.com/in/suraj-kumar-b881b8145/" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
        <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
    </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Suraj Kumar</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
-</div>
+ <br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Suraj Kumar</label><br><br>
+ <label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
+  </div>
 
-<div class="bisu" style="margin-left:220px">
+ <div class="bisu" style="margin-left:200px">
 		<div class="item">
 	<img src="bisu.JPG" width="250px">
-</div></div>
-<div class="mail1" style="padding-bottom:5px"><label style="margin:0px;padding-right:1px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px"> bishwajeetk003@gmail.com</label></div>
-<div class="centered1">
- </div>
- 	<div class="sub1">
+ </div></div>
+ <div class="mail1" style="padding-bottom:5px"><label style="margin:0px;padding-right:1px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px"> bishwajeetk003@gmail.com</label></div>
+  	<div class="sub1">
  		<div class="sos1">
      <a href="https://www.facebook.com/profile.php?id=100008118907947" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
       <a href="https://www.linkedin.com/in/bishwajeet-kumar-2b044a14a" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
        <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
        </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Bishwajeet Kr</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
+ <br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Bishwajeet Kr</label><br><br>
+ <label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
    </div>
 
-<div class="bisu"  style="margin-left:210px">
+ <div class="bisu"  style="margin-left:190px">
 		<div class="item">
 	<img src="prince1.jpg" width="250px" height="332px">
-</div></div>
-<div class="mail2" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px">&nbsp sraja1652@gmail.com</label></div>
-<div class="centered2">
- </div>
+ </div></div>
+  <div class="mail2" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px">&nbsp sraja1652@gmail.com</label></div>
  	<div class="sub2">
  		<div class="sos2">
      <a href="https://www.facebook.com/profile.php?id=100006522195366" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
       <a href="" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
        <a href="" target="_blank"><img src="twiter icon.png" width="55px"></a>
        </div>
-<br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Prince Kumar</label><br><br>
-<label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
+ <br><label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Prince Kumar</label><br><br>
+ <label style="background-color: rgba(3, 185, 248, 0.6);padding:8px">Student</label>
    </div>
-</div>
+ </div></center>
 
 
-<div class="footer">
+ <div class="footer">
 	<div class="social">
     <br><label style="font-size:23px;font-family:arial;padding-left:130px;border-bottom:2px solid rgba(56, 215, 38, 0.85);padding-right:130px">Join Us</label><br><br>
     &nbsp <a href="faebook.com"><img src="fb.png" width="40px"></a>
@@ -850,7 +977,7 @@ a
     &nbsp <a href="google.com"><img src="github.png" width="40px"></a>
     &nbsp <a href="https://www.instagram.com/venom.003/" target="_blank"><img src="instagram.png" width="40px"></a>
     &nbsp <a href="https://twitter.com/Bishwaj29117495" target="_blank"><img src="twiter.jpg" width="42px"></a><br><br><br><br><br><br><br><br><br><br>
-</div>
+ </div>
     <div class="loc">
     	<br><label style="font-size:23px;font-family:arial;padding-left:105px;border-bottom:2px solid rgba(56, 215, 38, 0.85);padding-right:130px">Location</label><br><br>
     	&nbsp <a href="https://goo.gl/maps/SKNYf7VhhP62" target="_blank"><img src="map1.png" width="350px" height="130px"></a><br><br>
@@ -867,13 +994,18 @@ a
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
     </label><br><br>
     <div style="height:50px;width:100%;background-color:rgba(0,0,0,0.45)">
-    <center><input type="submit" value="Subscribe"></center>
+    <center><input type="submit" id="abc" value="Subscribe" ></center>
+    <script type="text/javascript">
+function sub()
+{
+	alert("You have subscribed to our daily Newsletter");
+}
+    </script>
     </div>
   </form>
   </div>
 	</div>
-
-
+</div>
 	<script>
 var slideIndex = 0;
 showSlides();
@@ -895,28 +1027,16 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
-$(function(){
-var overlay = $('<div id="overlay"></div>');
-overlay.show();
-overlay.appendTo(document.body);
-$('.popup').show();
-$('.close').click(function(){
-$('.popup').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
 
- 
-
-$('.x').click(function(){
-$('.popup').hide();
-overlay.appendTo(document.body).remove();
-return false;
-});
-});
-
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 </script>
-
 </body>
 </html>
