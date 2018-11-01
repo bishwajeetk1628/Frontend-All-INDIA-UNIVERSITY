@@ -6,18 +6,18 @@
 <style>
 body
 {
-	background-image:url(dk2.jpg);
-	background-color: white;
+	background-color: #003151;
 	background-repeat: no-repeat;
-	margin: 0;
-	background-size: 1400px 1650px;
+	background-size: 1400px 2000px;
 	font-family: arial;
+	margin: 0;
 }
 .footer
  {
  	background-color: rgba(0,0,0,0.5);
  	width: 100%;
  	height: 350px;
+ 	margin: 0;
  }
  .loc
  {
