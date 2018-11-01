@@ -101,7 +101,7 @@ padding-bottom: 10px;
 	border:none;
 	padding: 10px;
 	font-size: 18px;
-	margin-left: 10px;
+	margin-left: 1.5%;
 	color:white;
 	letter-spacing: 0.7px;
 	text-decoration: none;
@@ -131,9 +131,9 @@ body
 }
 #search
 {
-width:230px;
+width:16%;
 height: 35px;
-margin-left: 55px;
+margin-left: 3%;
 padding-left: 8px;
 display: inline-block;
 }
@@ -163,36 +163,30 @@ label
 }
 #login
 {
-margin-top: 4.5%;
 border: none;
 height: 550px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 4%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+margin-left: 32%;
+border-radius:5px; 
 }
 #login_box
 {
-margin-top: 4.5%;
 border: none;
 height: 450px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 4%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+margin-left: 32%;
+border-radius: 5px;
 }
 #contact
 {
-margin-top: 4.5%;
 border: none;
 height: 400px;
-background-color: rgba(0,0,0,0.5);
-position: absolute;
-top: 4%;
-right: 35%;
+background-color: rgba(0,0,0,0.7);
 width: 32%;
+border-radius: 5px;
+margin-left:32%; 
 }
 input[type="text"]
 {
@@ -344,7 +338,7 @@ ol li
 
  	border-radius: 10px;
  	position: absolute;
- 	top: 140px;
+ 	top: 25px;
  	right: 80px;
  	width: 160px; 	
  
@@ -430,7 +424,7 @@ input[type="submit"]
 .about
 {
 	width: 94%;
-	height: 440px;
+	height: 540px;
 	border-radius: 5px;
 	margin-top: 80px;
 	float: center;
@@ -458,33 +452,15 @@ input[type="submit"]
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-.centered {
-    position: absolute;
-    top: 135.7%;
-    left: 6.3%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
-}
 .sub
 {
 	position: absolute;
-    top: 137%;
-    left: 7%;
-      width: 0;
+    top: 1570px;
+    left: 7.4%;
+  
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
-}
-.centered1 {
-    position: absolute;
-    top: 135.7%;
-    left: 41.45%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
 }
 .about:hover .centered1,.about:hover .centered2,.about:hover .centered{
  width: 250px;
@@ -493,28 +469,17 @@ input[type="submit"]
 .sub1
 {
 	position: absolute;
-    top: 137%;
-    left: 42%;
-    width: 0;
+    left: 41.2%;
+    bottom: 531px;
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
 }
-.centered2 {
-    position: absolute;
-    top: 135.7%;
-    left: 75.9%;
-    width: 0;
-  overflow: hidden;
-  white-space:nowrap;
-    background-color: rgba(0,0,0,0.6);
-}
 .sub2
 {
 	position: absolute;
-    top: 137%;
-    left: 76.4%;
-   width: 0;
+bottom: 531px;
+    left: 74.3%;
   overflow: hidden;
   white-space:nowrap;
   transition:width .5s linear;
@@ -575,9 +540,8 @@ input[type="submit"]
   
 float: center;
   margin: auto;
-   background-color: rgba(0,0,0,0.5);
   padding: 30px;
- 
+ background-color: rgba(0,0,0,0.5);
   padding-right: 0px;
  border-radius:5px; 
 
@@ -590,7 +554,7 @@ float: center;
   border-bottom: 2px solid black;
   font-weight: bold;
   position: absolute;
-   top : 150px;
+   top : 35px;
  left:390px;
 }
 
@@ -638,7 +602,12 @@ float: center;
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+@media only screen and (max-width: 1320px) {
+	#home,.home
+	{
+       display: none;
+	}
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -705,7 +674,8 @@ a
 	background-color: rgba(0,0,0,0.5);
 	border-radius: 10px;
 	padding: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
+	margin-bottom: 5px;
 }
 .c
 {
@@ -743,24 +713,111 @@ a
 	border-radius: 5px;
 	padding: 5px;
 }
+.mode1
+{
+	position: static;
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	filter:none;
+	padding-bottom: 30px;
+	width: 300px;
+	border-radius: 5px;
+}
+.mode1,#login,#login_box,#contact {
+    -webkit-animation: animatezoom 1.5s;
+    animation: animatezoom 1.5s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.contents,.header
+{
+-webkit-filtter:blur(3px);
+-moz-filter:blur(3px);
+-o-filter:blur(3px);
+filter:blur(3px);
+}
+.mySlides
+{
+background-color: (0,0,0,0.5);
+}
  </style>
 </head>
 <body onload="myFunction()">
 
 <div id="loader"></div>
 <div style="display:none;" id="myDiv" class="animate-bottom">
-   <div class="header">
-	&nbsp&nbsp<img id="img" src="icon.png" width="50px" height="55px"><p id="log">&nbsp<span>ALL</span> INDIA UNIVERSITY</p>
+	
+
+
+   <div class="header" id="hd">
+   	&nbsp&nbsp<img id="img" src="icon.png" width="50px" height="55px"><p id="log">&nbsp<span>ALL</span> INDIA UNIVERSITY</p>
  &nbsp &nbsp &nbsp <a href="frontend.php" id="home">Home</a>
  <a href="about_us.php" id="home">About us</a>
- <a href="#" id="home" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none'">Contact</a>
- <a href="#" id="home"  onclick="document.getElementById('login_box').style.display='block';document.getElementById('login').style.display='none';document.getElementById('contact').style.display='none'">Login</a>
- <button class="home" onclick="document.getElementById('login').style.display='block';document.getElementById('login_box').style.display='none';document.getElementById('contact').style.display='none'">Signup</button>
+ <a href="#" id="home" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Contact</a>
+ <a href="#" id="home"  onclick="document.getElementById('login_box').style.display='block';document.getElementById('login').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Login</a>
+ <button class="home" onclick="document.getElementById('login').style.display='block';document.getElementById('login_box').style.display='none';document.getElementById('contact').style.display='none';document.getElementById('con').style.display='none';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';">Signup</button>
  <input type="search" id="search" placeholder="search.......">
  <button id="srchbtn">Search</button>
  </div><br><br>
 
- <div class="slideshow-container">
+<div id="login" style="display:none">
+	<form method="POST" id="myform" action="signup.php">
+  <img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
+ <center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Signup</label></center><br><br>
+ <label>Name<input type="text" id="name" placeholder="Enter Your Name" required></label><br><br>
+ <label>Gender<br>&nbsp &nbsp <input type="radio" name="gender" value="Male" checked>Male</label>
+ <label><input type="radio" name="gender" value="Female">Female</label>
+ <label><input type="radio" name="gender" value="Other">Other</label><br><br>
+ <label>Mobile No.<input type="number" id="mob" placeholder="Enter Your Mobile Number" pattern="[789][0-9]{9}" title="wrong mobile number" required></label><br><br>
+ <label>Email Id<input type="text" id="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Password<input type="password" id="p1" placeholder="Enter Password" required></label><br><br>
+ <label>Co-Password<input type="password" id="p2" placeholder="Enter Co-Password" required></label><br><br>
+ <center><button id="submit" onclick="signup()">Signup</button></center>
+ </form>
+	</div>
+  <div id="login_box" style="display:none">
+ <form action="login.php" method="POST">
+	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login_box').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
+	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Login</label></center><br><br><br>
+ <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Password<input type="password" placeholder="Enter Password" required></label><br><br>
+ <label><input type="checkbox" checked> Save Password</label>
+ <center><button id="submit">Login</button></center>
+ <a id="forgot" href="#">Forgot Password?</a><br><br>
+ <center><label>OR</label><br>
+ <label>Login via</label><br><br>
+ &nbsp &nbsp &nbsp <a href="facebook.com"><img src="fb.png" width="35px"></a>&nbsp &nbsp 
+ <a href="google.com"><img src="google.png" width="35px"></a></center>
+ </form>
+ </div>
+<div id="contact" style="display:none">
+ <form>
+	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('contact').style.display='none';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';document.getElementById('con').style.display='block';"><br>
+	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Feel Free To Contact Us</label></center><br><br><br>
+ <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
+ <label>Message<textarea rows="8" cols="53" type="text" placeholder="Write your message here......" required></textarea></label><br><br>
+ <center><button id="submit">Send</button></center>
+ </center>
+ </form>
+ </div>
+
+
+         <center>
+		<div class="mode1" id="bishu1">
+		<img src="close.png" width="25px" style="float:right;cursor:pointer" onclick="document.getElementById('bishu1').style.display='none';document.getElementById('con').style.display='block';document.getElementById('contentsid').style.filter='blur(0px)';document.getElementById('hd').style.filter='blur(0px)';"><br>
+		 <a href="#" id="home" onclick="document.getElementById('login_box').style.display='block';document.getElementById('login').style.display='none';document.getElementById('bishu1').style.display='none';document.getElementById('login_box').style.filter='blur(0px)';">Login</a><b style="color:white">|<b>
+ <button class="home" onclick="document.getElementById('login').style.display='block';document.getElementById('bishu1').style.display='none';document.getElementById('login_box').style.display='none';">Signup</button>
+	</div></center>
+<div class="contents" id="contentsid">
+ <div class="slideshow-container" id="con" style="display:none">
  <div class="mySlides fade">
   <div class="numbertext"><a href="http://www.iitb.ac.in/"><img src="brow.png" width="20px" align="top">Visit website</a></div>
   <img src="1a.jpg" style="width:87%;height:460px;border-radius:10px;">
@@ -798,70 +855,30 @@ a
   <span class="dot"></span> 
  </div></div>
 
- <div id="login" style="display:none">
-	<form method="POST" id="myform" action="signup.php">
-  <img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login').style.display='none'"><br>
- <center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Signup</label></center><br><br>
- <label>Name<input type="text" id="name" placeholder="Enter Your Name" required></label><br><br>
- <label>Gender<br>&nbsp &nbsp <input type="radio" name="gender" value="Male" checked>Male</label>
- <label><input type="radio" name="gender" value="Female">Female</label>
- <label><input type="radio" name="gender" value="Other">Other</label><br><br>
- <label>Mobile No.<input type="number" id="mob" placeholder="Enter Your Mobile Number" pattern="[789][0-9]{9}" title="wrong mobile number" required></label><br><br>
- <label>Email Id<input type="text" id="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
- <label>Password<input type="password" id="p1" placeholder="Enter Password" required></label><br><br>
- <label>Co-Password<input type="password" id="p2" placeholder="Enter Co-Password" required></label><br><br>
- <center><button id="submit" onclick="checkpss();signup()">Signup</button></center>
- </form>
-	</div>
-  <div id="login_box" style="display:none">
- <form action="login.php" method="POST">
-	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('login_box').style.display='none'"><br>
-	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Login</label></center><br><br><br>
- <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
- <label>Password<input type="password" placeholder="Enter Password" required></label><br><br>
- <label><input type="checkbox" checked> Save Password</label>
- <center><button id="submit">Login</button></center>
- <a id="forgot" href="#">Forgot Password?</a><br><br>
- <center><label>OR</label><br>
- <label>Login via</label><br><br>
- &nbsp &nbsp &nbsp <a href="facebook.com"><img src="fb.png" width="35px"></a>&nbsp &nbsp 
- <a href="google.com"><img src="google.png" width="35px"></a></center>
- </form>
- </div>
+ 
 
- <div id="contact" style="display:none">
- <form>
-	<img src="close.png" width="40px" style="float:right;cursor:pointer" onclick="document.getElementById('contact').style.display='none'"><br>
-	<center><label style="font-size:20px;margin-left:45px;border-bottom:3px solid rgba(56, 215, 38, 0.85);padding-left:15px;padding-right:15px;padding-bottom:4px">Feel Free To Contact Us</label></center><br><br><br>
- <label>Email Id<input type="text" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="wrong email id" required></label><br><br>
- <label>Message<textarea rows="8" cols="53" type="text" placeholder="Write your message here......" required></textarea></label><br><br>
- <center><button id="submit">Send</button></center>
- </center>
- </form>
- </div>
+ 
 <div>
 </div><br><br>
 <div class="service">
-	<center><label style="font-size:29px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Our Services</label><br><br>
+	<center><label style="font-size:29px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Our Services</label><br><br><br>
 	<div class="c"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Campus Visit</label><br><br><label>Take a journey through your dream<br>University as before you get admitted<br> to one of it cross India.<br>If you would like to attend the campus visit,<br>please leave us a message above,<br>please note that separate reservations are<br>required for each individual for campus tour.</label><br><br>
- <br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none'">Click here for enquiry</a>
+ <br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';document.getElementById('con').style.display='none';">Click here for enquiry</a>
 	</div>
 	<div class="d"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Direct Addmission</label><br><br><label>We are also glad to announce that<br> after achieving <br>special authority<br> liscense from all <br>the universities in India,<br>we are now able to provide direct admission<br> to the students via our business partner.</label>
-		<br><br><br><br><br><br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('login').style.display='none';document.getElementById('login_box').style.display='none'">Click here for enquiry</a>
+		<br><br><br><br><br><br><a href="#" id="home" style="background-color: rgba(56, 255, 38, 0.85)" onclick="document.getElementById('contact').style.display='block';document.getElementById('contentsid').style.filter='blur(3px)';document.getElementById('hd').style.filter='blur(3px)';document.getElementById('con').style.display='none';">Click here for enquiry</a>
 	</div>
 	<div class="e"><label style="font-size:25px;border-bottom:2px solid rgba(56, 255, 38, 0.85)">Scholarship</label><br><br><label>Systems vary widely from country to country, and <br>sometimes from institution to institution.<br> In India almost all top private colleges and <br>universities are having separate seats for management <br>quota. Education diary plays a vital role in<br> college and universities admission for all <br>Undergraduate and postgraduate programs.Hence,we<br> organize different scholarship test on the <br>basis of which one can acihieve benefits</label></div></center>
 </div>
 
  <center><div class="about" >
-	<center><label style="font-size:35px;border-bottom:3px solid rgba(56, 215, 38, 0.85)">Our Professionals</label></center><br>
+	<center><label style="font-size:35px;border-bottom:3px solid rgba(56, 215, 38, 0.85)"><br>Our Professionals</label></center><br><br><br>
 	<div class="bisu"  style="margin-left:0px">
 		<div class="item">
 	<img src="suraj.jpeg" width="260px" height="332px">
  </div></div>
  <div class="mail" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" width="25px" align="top":>&nbsp surajshah766@gmail.com</label></div>
- <div class="centered">
- </div>
-
+ 
  <div class="sub">
  	<div class="sos">
      <a href="https://www.facebook.com/profile.php?id=100007057170409" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
@@ -877,9 +894,7 @@ a
 	<img src="bisu.JPG" width="250px">
  </div></div>
  <div class="mail1" style="padding-bottom:5px"><label style="margin:0px;padding-right:1px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px"> bishwajeetk003@gmail.com</label></div>
-  <div class="centered1">
- </div>
- 	<div class="sub1">
+  	<div class="sub1">
  		<div class="sos1">
      <a href="https://www.facebook.com/profile.php?id=100008118907947" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
       <a href="https://www.linkedin.com/in/bishwajeet-kumar-2b044a14a" target="_blank"><img src="linkedin icon.png" width="55px" ></a>
@@ -894,8 +909,6 @@ a
 	<img src="prince1.jpg" width="250px" height="332px">
  </div></div>
   <div class="mail2" style="padding-bottom:5px"><label style="margin:0px;padding-right:8px;font-size:19px;font-family:Lobster Two;letter-spacing:0.9px">&nbsp<img src="mail.png" align="top" width="25px">&nbsp sraja1652@gmail.com</label></div>
- <div class="centered2">
- </div>
  	<div class="sub2">
  		<div class="sos2">
      <a href="https://www.facebook.com/profile.php?id=100006522195366" target="_blank"><img src="fb icon.png" width="25px" style="padding-bottom:13px"></a>
@@ -935,11 +948,18 @@ a
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
     </label><br><br>
     <div style="height:50px;width:100%;background-color:rgba(0,0,0,0.45)">
-    <center><input type="submit" value="Subscribe"></center>
+    <center><input type="submit" id="abc" value="Subscribe" ></center>
+    <script type="text/javascript">
+function sub()
+{
+	alert("You have subscribed to our daily Newsletter");
+}
+    </script>
     </div>
   </form>
   </div>
 	</div>
+</div>
 </div>
 	<script>
 var slideIndex = 0;
